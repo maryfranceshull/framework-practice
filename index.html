@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>Alligators To Know</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="script.js"></script>
+  
 </head>
 <body>
   <header>
@@ -14,7 +16,12 @@
       My Favorite Alligators
     </h1>
   </header>
-
+  
+<!-- delete later -->
+  <div id="app">
+  {{ message }}
+  </div>
+  
   <div class="filters">
     <label>
       <input type="checkbox" name="icecream">

@@ -24,7 +24,16 @@ profileListings = new Vue({
   el: '#profileListings',
   data: {
    profiles: gators
+    },
+  methods: {
+    icecreamFilter: function(){
+      console.log("filtering now:)")
+      this.profiles = gators.filter(function(element){
+        return element.likesIceCream  
+      })
     }
-  })
+  }
+  
+})
   
 })

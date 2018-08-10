@@ -17,6 +17,12 @@ let gators = [
   }
 ]
 
+Vue.component('headline', {
+  props: ['title'],
+  template: '<h1><img src="alligator-logo.png" alt="Alligator Logo">{{title}}</h1>'
+})
+
+
 let  profileListings
 document.addEventListener("DOMContentLoaded", function (){                                        
 profileListings = new Vue({
@@ -25,4 +31,9 @@ profileListings = new Vue({
    profiles: gators
     }
   })
+  
+  let headerApp = new Vue({
+    el: '#headerApp'
+  })
+  
 })
